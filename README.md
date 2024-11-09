@@ -1,6 +1,3 @@
-以下是一个简单的`README.md`模板，适用于你的R包`causalReg`：
-
-```markdown
 # causalReg
 
 `causalReg` is an R package designed to perform regression analysis using the Oster method. It provides tools for calculating `betaf` and `zeroeff` for causal inference based on Oster Method.
