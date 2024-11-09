@@ -1,0 +1,20 @@
+Package: causalReg
+Version: 0.0.1
+Date: 2024-11-09
+Title: Regression-based techniques for causal inference.
+Author: Dylan Junluo CHEN
+Maintainer: Junluo CHEN <chenjunluo.is@gmail.com>
+Depends:
+    R (>= 3.1.0)
+Imports:
+    tools
+Suggests:
+    roxygen2,
+    markdown,
+    knitr
+Description: Regression-based techniques for causal inference.
+License: GPL
+URL: https://github.com/chen-junluo/causalReg
+BugReports: https://github.com/chen-junluo/causalReg/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
