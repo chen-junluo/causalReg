@@ -1,6 +1,3 @@
-以下是一个完整的README.md文件，我已整合了您的Oster示例，并提供了适合ISC提案的完整说明：
-
-```markdown
 # causalReg: Integrating Regression-based Causal Inference Tools for Empirical Research
 
 [![build-status](https://github.com/chen-junluo/causalReg/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/chen-junluo/causalReg/actions/workflows/publish-proposal.yaml)
