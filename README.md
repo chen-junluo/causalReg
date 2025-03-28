@@ -1,62 +1,98 @@
-# isc-proposal
+以下是一个完整的README.md文件，我已整合了您的Oster示例，并提供了适合ISC提案的完整说明：
 
-[![build-status](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml)
+```markdown
+# causalReg: Integrating Regression-based Causal Inference Tools for Empirical Research
 
-This repository is a boilerplate repository that helps you prepare your proposal for the [R Consortium](https://www.r-consortium.org).
+[![build-status](https://github.com/chen-junluo/causalReg/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/chen-junluo/causalReg/actions/workflows/publish-proposal.yaml)
 
-## Background 
+## Project Overview
 
-Set up in 2015, the R Consortium is an organisation set up to help support the R Foundation, the R Community, and R users.
+The `causalReg` package provides an integrated toolkit for regression-based causal inference methods in R, specifically designed to facilitate adoption by China's empirical research community. The package addresses three key aspects of causal inference:
 
-> The primary purpose of the R Consortium (collectively, the “Purpose”) is to: 
->
->(a) advance the worldwide promotion of and support for the R open source language and environment as the preferred language for statistical computing and graphics (the “Environment”);
->
->(b) establish, maintain, seek support for, and develop infrastructure projects and technical and infrastructure collaboration initiatives related to the Environment, and such other initiatives as may be appropriate to support, enable and promote the Environment; 
->
->(c) encourage and increase user adoption, involvement with, and contribution to, the Environment; 
->
->(d) facilitate communication and collaboration among users and developers of the Environment, the R Consortium and the R Foundation for Statistical Computing (the “R Foundation”); 
->
->(e) support and maintain policies set by the Board; and 
->
->(f) undertake such other activities as may from time to time be appropriate to further the purposes and achieve the goals set forth above.  
->
->In furtherance of these efforts, the R Consortium shall seek to solicit the participation of all interested parties on a fair, equitable and open basis.
+1. **Sensitivity Analysis** - Implementation of Oster's method for assessing robustness to omitted variable bias
+2. **Heterogeneous Treatment Effects** - Enhanced and fixed implementation of the SortedEffects methodology
+3. **Policy Learning** - Tools for optimal treatment targeting and deployment
 
-_Source: [R Consortium Bylaws, Section 1.4](https://r-consortium.org/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf)_
+This project aims to create a bridge between Stata-centric workflows common in China's academic community and R's powerful ecosystem, enabling researchers to leverage cutting-edge causal inference techniques.
 
-Delivery of the technical aspects for R Consortium's projects is overseen by the Infrastructure Steering Committee (ISC). The ISC is set up to receive, select, and manage projects that deliver upon the aims of the Consortium. The ISC will have an ongoing call for proposals and will select proposals to move into project stage approximately every six months. Within the process notes, it does say that if a proposal is unlikely to get funded then the proposers will be notified as soon as possible, partially so that re-submission can happen in the event fixable issues.
+## Example: Oster Sensitivity Analysis
 
-## Proposals
+The `osterReg` function implements Oster's (2019) method for evaluating omitted variable bias:
 
-Here we detail useful guidance notes on making proposals to the ISC but you should always consult the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page as there could be updates.
+```r
+library(causalReg)
 
-- Try to complete as many of the sections of this boilerplate document as possible. Each section is included either for practical purposes or has been specifically requested by the ISC
-- Add relevant additional sections, like the letter of support from an R Core member if you want a change to R itself
-- Proposals should be 2-5 pages when in PDF form
-- You *can* submit a proposal on your own, but it's really recommended to get engagement from the community (and the ISC) first
-- Proposals should be submitted through the form on the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page
+# Example data
+data <- data.frame(
+  y = rnorm(100),
+  x = rnorm(100),
+  z = rnorm(100),
+  cluster = rep(1:10, each = 10)
+)
 
-## Making your proposal
+# Run Oster regression
+result <- osterReg(
+  reg_type = "felm",
+  depvar = "y",
+  indepvar = "x",
+  controls = c("z"),
+  fixed_effects = c("cluster"),
+  cluster_var = "cluster",
+  data = data
+)
 
-This is a boilerplate repository that you will need to fork, title appropriately and start filling in.
+print(result)
+```
 
--   Use the "Use this template" button on GitHub
--   Create a new repository with a name to reflect your proposal
--   Create a new Rstudio project from version control and use the git URL for the repo
--   Write an overview of the proposal instead of this boilerplate for the README
--   Start completing the relevant Rmd pages of the proposal
--   Render `isc-proposal.qmd` to build the document locally
--   Regularly commit and push the changes to github
--   Solicit feedback and contributions from others
+This analysis helps researchers understand how sensitive their causal estimates are to potential unmeasured confounders - a critical capability for robust empirical work that has been difficult to implement with multi-way fixed effects in existing tools.
 
-### Automatically generate your proposal
+## Project Motivation
 
-This repository comes with a GitHub actions setup to automatically render your proposal to HTML and PDF formats.  To take advantage of it, you must publish the proposal to GitHub pages interactively the first time.
+In China, empirical researchers primarily use Stata for econometric analysis, especially for causal inference techniques like two-way fixed effects and difference-in-differences models. However, R offers significant advantages:
 
-From the command line, run `quarto publish gh-pages isc-proposal.qmd`.  After this, the GitHub action should run every time you push a commit to the main branch. Your rendered proposal can then be viewed at https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
+- Faster implementation of methodological innovations
+- Superior visualization capabilities
+- Open-source collaborative development
+- Better support for reproducible research
+
+`causalReg` aims to lower the barriers to R adoption by providing familiar causal inference tools with enhanced capabilities and bilingual documentation.
+
+## Project Timeline
+
+The package will be developed in three phases over 6-7 months:
+
+1. **Phase 1 (2 months)**: Omitted Variable Bias Sensitivity Analysis
+2. **Phase 2 (2 months)**: Treatment Effect Heterogeneity Analysis
+3. **Phase 3 (2 months)**: Policy Learning Implementation
+4. **Documentation & Release (1 month)**: Final integration and comprehensive documentation
+
+## Team
+
+The project is led by Dylan Junluo CHEN (PhD student, City University of Hong Kong), with support from:
+- **Bofei SHE** (PhD student, NUS College of Computing)
+- **Prof. Ben LIU** (City University of Hong Kong)
+- **Prof. Xin LI** (City University of Hong Kong)
+
+## ISC Proposal
+
+This repository contains our proposal to the R Consortium Infrastructure Steering Committee for funding support. The complete proposal can be viewed at:
+
+- [HTML Version](https://chen-junluo.github.io/causalReg/)
+- [PDF Version](https://chen-junluo.github.io/causalReg/isc-proposal.pdf)
+
+## Installation (Future)
+
+```r
+# Install devtools if you haven't already
+install.packages("devtools")
+# Install causalReg from GitHub
+devtools::install_github("chen-junluo/causalReg")
+```
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ISC Boilerplate</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/stephlocke" property="cc:attributionName" rel="cc:attributionURL">Stephanie Locke</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/RConsortium/isc-proposal" rel="dct:source">https://github.com/RConsortium/isc-proposal</a>.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or feedback about this proposal, please contact Dylan Junluo CHEN or open an issue in this repository.

@@ -1,30 +1,72 @@
 # Project plan
 
-## Start-up phase
-<!--
-Covering the planning phase, this section should provide a relatively detailed plan of how work will start on the project. This section is important because projects need to get up and running quickly.
+## Start-up phase (Month 1)
 
+The initial phase will focus on establishing project infrastructure and planning:
 
- - [ ] Setting up collaboration platform inc. code for contributors etc.
- - [ ] Licence decisions
- - [ ] Reporting framework
--->
-
+- Set up GitHub repository with proper contribution guidelines
+- Establish code style, documentation standards, and review processes
+- Create continuous integration pipeline for testing
+- Finalize detailed technical specifications for each module
+- Develop initial project website structure
+- Select MIT license for maximum accessibility and reuse
 
 ## Technical delivery
-<!--
-Covering the actual delivery of the project this section should provide at least a high-level the implementation. 
 
-Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
--->
+### Phase 1: Omitted Variable Bias Sensitivity Analysis (Month 2-3)
+
+**Month 2: Development**
+- Implement core sensitivity analysis functionality based on Oster methodology
+- Integrate with lfe package for fixed effects support
+- Develop visualization components
+- Create test suite with comprehensive coverage
+
+**Month 3: Documentation and Release**
+- Complete English and Chinese function documentation
+- Develop vignette explaining methodology and application
+- Prepare example dataset and use cases
+- Release initial version (0.1.0) to GitHub
+- Submit to CRAN
+
+### Phase 2: Treatment Effect Heterogeneity Analysis (Month 4-5)
+
+**Month 4: Development**
+- Fork and repair SortedEffects package
+- Fix continuous variable handling bug
+- Enhance integration with standard regression workflows
+- Improve visualization capabilities
+
+**Month 5: Integration and Documentation**
+- Integrate with causalReg package
+- Complete bilingual documentation
+- Develop tutorial vignette with applied examples
+- Release updated version (0.2.0)
+
+### Phase 3: Policy Learning Implementation (Month 6-7)
+
+**Month 6: Development**
+- Implement core policy learning algorithms
+- Create interface for optimal treatment targeting
+- Develop visualization for policy insights
+- Build test suite for functionality
+
+**Month 7: Final Integration and Release**
+- Integrate policy learning module with package
+- Complete comprehensive documentation
+- Develop advanced tutorial vignette
+- Release complete package version (1.0.0)
 
 ## Other aspects
-<!--
-Covering non-technical activities like on-going publicity, paper preparation, discussion groups etc. that might be required to facilitate successful delivery of the project.
 
- - [ ] Announcement post
- - [ ] Delivery blog post
- - [ ] Twitter
- - [ ] UseR!
- - [ ] ISC meetings
--->
+**Community Building and Promotion (Ongoing)**
+
+- **Month 3**: Initial announcement blog post and social media (WeChat) campaign
+- **Month 5**: Webinar demonstrating first two modules (recorded in Chinese and English)
+- **Month 7**: Comprehensive video tutorial series
+- **Month 8**: Workshop materials for university training sessions
+
+**Reporting and Communication**
+
+- Monthly progress reports to ISC
+- Quarterly blog posts on R Consortium website
+- Final project report and case study

@@ -1,20 +1,78 @@
 # The proposal
-<!--
-This is where the proposal should be outlined. 
--->
 
 ## Overview
-<!--
-At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
--->
+
+The causalReg package will provide an integrated toolkit for regression-based causal inference methods in R, specifically designed to facilitate adoption by China's empirical research community. By addressing the methodological gaps identified in the problem statement, causalReg will:
+
+1. **Integrate critical causal inference techniques** into a cohesive framework built on established R packages like lfe [@gaure2013lfe]
+2. **Provide bilingual documentation and tutorials** targeting Chinese research students
+3. **Establish ongoing maintenance** for key capabilities including SortedEffects
+4. **Create a bridge** between Stata-centric workflows and R's powerful ecosystem
+
+This project directly aligns with the R Consortium's mission by expanding R's reach in a significant academic community, ensuring package sustainability, and promoting reproducible research practices.
 
 ## Detail
-<!--
-Go into more detail about the specifics of the project and it delivers against the problem.
 
-Depending on project type the detail section should include:
+The causalReg package will be developed in three progressive phases, each targeting a key component of the regression-based causal inference workflow:
 
- - [ ] Minimum Viable Product
- - [ ] Architecture
- - [ ] Assumptions
--->
+### Phase 1: Omitted Variable Bias Sensitivity Analysis
+
+Building on the methodology developed by Oster [-@oster2019unobservable], we will implement a robust solution for sensitivity analysis that:
+
+- Extends existing implementations to support multi-way fixed effects through integration with the lfe package
+- Provides intuitive visualization of sensitivity bounds
+- Includes comprehensive documentation with applied examples from economics and information systems
+
+The implementation will handle both continuous and binary outcomes, with full support for the standard econometric workflow including clustered standard errors and various fixed effects specifications.
+
+### Phase 2: Treatment Effect Heterogeneity Analysis
+
+We will revive and enhance the SortedEffects package [@chernozhukov2018sorted] to:
+
+- Fix critical bugs affecting continuous variable analysis
+- Improve integration with standard regression workflows
+- Add robust visualization capabilities for heterogeneous effects
+- Enhance documentation with practical examples 
+
+This module will allow researchers to move beyond average treatment effects to understand how causal impacts vary across the population - a critical capability for policy analysis.
+
+### Phase 3: Policy Learning Implementation
+
+Building on recent methodological developments in machine learning for causal inference [@athey2021policy], we will:
+
+- Implement methods for optimal treatment targeting
+- Provide tools to estimate heterogeneous treatment effects with machine learning
+- Create accessible interfaces for policy learning without requiring deep ML expertise
+- Develop step-by-step tutorials for applied policy analysis
+
+### Minimum Viable Product
+
+The MVP for causalReg will include:
+
+1. A functioning R package with robust implementations of Oster sensitivity analysis and SortedEffects
+2. Comprehensive bilingual documentation including:
+   - Function references
+   - Methodological vignettes
+   - Applied tutorials with real-world datasets
+3. Integration with existing R econometric workflows
+4. Initial educational materials for Chinese users
+
+### Architecture
+
+The package will be built with a modular design that:
+
+1. Leverages established packages (lfe, sandwich, ggplot2) for core functionality
+2. Provides consistent syntax across different causal inference methods
+3. Includes flexible visualization components
+4. Offers both high-level interface functions and access to underlying components
+
+This architecture ensures maintainability while allowing advanced users to customize analyses as needed.
+
+### Assumptions
+
+Our approach is built on several key assumptions:
+
+1. The primary barrier to R adoption among Chinese research students is the lack of integrated, well-documented causal inference tools
+2. The proposed methodologies represent the most pressing needs for this community
+3. Bilingual materials will significantly reduce adoption barriers
+4. The integration of these methods will provide sufficient value to motivate users to transition from Stata

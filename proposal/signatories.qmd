@@ -1,22 +1,32 @@
 # Signatories
-<!-- 
-This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
-
-An optional section would be for R-Core signatories where changes to R are proposed.
--->
 
 ## Project team
-<!-- 
-Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
--->
+
+- **Dylan Junluo CHEN** (Primary Investigator)
+  PhD Student, Department of Information Systems
+  College of Business, City University of Hong Kong
+  Research interests: open source community, data breaches, empirical methods
+  Homepage: https://chen-junluo.com/
+
+- **Bofei SHE**
+  PhD Student, College of Computing
+  National University of Singapore
+  Expertise: R programming, econometric methods, statistical analysis
 
 ## Contributors
-<!-- 
-Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
--->
+
+- **Prof. Ben LIU**
+  Department of Information Systems
+  College of Business, City University of Hong Kong
+  Contribution: Econometric methodology guidance and validation
+
+- **Prof. Xin LI**
+  Department of Information Systems
+  College of Business, City University of Hong Kong
+  Contribution: Machine learning methodology consultation
 
 ## Consulted
-<!-- 
-Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
--->
 
+- **Fellow PhD students** at the Department of Information Systems, City University of Hong Kong who use R as their primary analysis tool for empirical research and have expressed interest in contributing to the open source community.
+
+- **Members of the China-R community** have been consulted regarding the needs of Chinese empirical researchers and the potential impact of this package.

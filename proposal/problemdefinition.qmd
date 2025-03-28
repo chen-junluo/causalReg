@@ -4,16 +4,42 @@ bibliography: references.bib
 
 # The Problem
 
-```{=html}
-<!-- 
-Outlining the issue / weak point / problem to be solved by this proposal. This should be a compelling section that sets the reader up for the next section - the proposed solution!
+In quantitative empirical research within China's academic community, Stata has long dominated as the primary tool for econometric analysis, particularly for causal inference techniques such as two-way fixed effects models and various difference-in-differences (DID) implementations [@angrist2009mostly]. This creates several critical challenges:
 
-It is important to cover:
+## Limited Methodological Access
 
- - [ ] What the problem is
- - [ ] Who it affects
- - [ ] Have there been previous attempts to resolve the problem
- - [ ] Why it should be tackled
--->
-```
-An example in-text citation [@wickham2016].
+While Stata offers established packages for traditional econometric approaches, newer methodologies often appear first in R. This creates a significant gap for Chinese research students who rely primarily on Stata. For example, recent developments in:
+
+1. **Omitted variable bias sensitivity analysis** [@oster2019unobservable] - While implemented in Stata, current implementations don't fully support multiple fixed effects structures common in modern empirical work.
+
+2. **Heterogeneous treatment effect estimation** - The SortedEffects package in R [@chernozhukov2018sorted] exhibits critical bugs with continuous variables that prevent proper analysis, yet remains unmaintained.
+
+3. **Optimal policy learning** - Tools for determining which samples should receive which treatments to maximize effectiveness remain fragmented and inaccessible to non-specialists.
+
+## Technical Barriers to Adoption
+
+For many Chinese research students, transitioning from Stata to R presents significant challenges:
+
+1. Language barriers limit access to English-language tutorials and documentation
+2. Lack of integrated teaching materials specifically targeting econometric applications
+3. Absence of comprehensive Chinese-language support for implementing causal inference methods in R
+
+## Previous Attempts and Limitations
+
+Several R packages individually address specific causal inference techniques, but they lack:
+
+1. **Integration** - No single package consolidates regression-based causal inference methods
+2. **Accessibility** - Limited bilingual documentation targeting Chinese users
+3. **Maintenance** - Critical bugs in packages like SortedEffects remain unaddressed
+4. **Pedagogy** - Missing connection to the applied econometrics workflow familiar to Stata users
+
+## Why This Problem Matters
+
+This situation creates a significant opportunity cost for China's empirical research community:
+
+1. **Research quality** - Limited access to cutting-edge methods affects the rigor of empirical work
+2. **Methodological innovation** - Restricted adoption of newer approaches hampers methodological advancement
+3. **Research efficiency** - Working around tool limitations consumes valuable research time
+4. **Global collaboration** - The divergence in tooling creates barriers to international research partnerships
+
+The R ecosystem offers substantial advantages for causal inference with its open-source nature, reproducibility, visualization capabilities, and rapid integration of methodological innovations. Creating a bridge between this ecosystem and China's research community would significantly advance empirical research capabilities.

@@ -1,10 +1,10 @@
 ---
 title: "Proposal Title"
 author: 
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
+  - name: Dylan Junluo CHEN
+    orcid: 0000-0001-5533-2254
     affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
+      - "Department of Information Systems, College of Business, City University of Hong Kong"
     
 date: today
 date-format: iso
