@@ -13,8 +13,8 @@ format:
     embed-resources: true
   hikmah-pdf:
     geometry: 
-      - left=1.25in
-      - right=1.25in
+      - left=1in
+      - right=1in
 bibliography: references.bib
 ---
 
