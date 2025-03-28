@@ -1,5 +1,5 @@
 ---
-title: "Proposal Title"
+title: "causalReg: Integrating Regression-based Causal Inference Tools for Empirical Research"
 author: 
   - name: Dylan Junluo CHEN
     orcid: 0000-0001-5533-2254
