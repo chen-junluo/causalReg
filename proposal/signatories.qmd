@@ -14,7 +14,7 @@
   Expertise: R programming, econometric methods, statistical analysis
 
 ## Contributors
-
+These contributors have provided extensive guidance to Dylan Junluo CHEN, and their expertise will be instrumental in helping him execute projects successfully:
 - **Prof. Ben LIU**
   Department of Information Systems
   College of Business, City University of Hong Kong

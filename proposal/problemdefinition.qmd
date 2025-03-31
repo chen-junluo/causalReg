@@ -2,44 +2,38 @@
 bibliography: references.bib
 ---
 
-# The Problem
+# Problem Definition
 
-In quantitative empirical research within China's academic community, Stata has long dominated as the primary tool for econometric analysis, particularly for causal inference techniques such as two-way fixed effects models and various difference-in-differences (DID) implementations [@angrist2009mostly]. This creates several critical challenges:
+## What the problem is, and Who it affects
 
-## Limited Methodological Access
+R stands as a premier platform for empirical research due to its widespread adoption among economists and statisticians, robust statistical testing capabilities that support rigorous empirical work, and a thriving open-source community ideal for reproducible research. Despite these advantages, significant gaps persist:
 
-While Stata offers established packages for traditional econometric approaches, newer methodologies often appear first in R. This creates a significant gap for Chinese research students who rely primarily on Stata. For example, recent developments in:
+For Chinese students and researchers:
+1. Substantial language barriers limit access to predominantly English documentation
+2. Absence of Chinese-language communities for support and knowledge sharing
+3. Lack of integrated frameworks and educational materials in Chinese that connect theoretical concepts with practical implementation
 
-1. **Omitted variable bias sensitivity analysis** [@oster2019unobservable] - While implemented in Stata, current implementations don't fully support multiple fixed effects structures common in modern empirical work.
+For the international research community: While emerging empirical methods appear in various packages, they lack integration into a cohesive framework, forcing researchers to navigate multiple disconnected tools and creating inefficiencies in the empirical workflow.
 
-2. **Heterogeneous treatment effect estimation** - The SortedEffects package in R [@chernozhukov2018sorted] exhibits critical bugs with continuous variables that prevent proper analysis, yet remains unmaintained.
+Our proposal aims to establish an integrated regression-based causality development toolkit, alongside a dedicated Chinese-language support organization, community platform, and comprehensive educational materials. This approach addresses both technical and accessibility challenges in the empirical research workflow.
 
-3. **Optimal policy learning** - Tools for determining which samples should receive which treatments to maximize effectiveness remain fragmented and inaccessible to non-specialists.
+## Have there been previous attempts to resolve the problem
 
-## Technical Barriers to Adoption
+As our Minimum Viable Product (MVP), we've selected one specific function for each of the three stages of causal inference:
 
-For many Chinese research students, transitioning from Stata to R presents significant challenges:
+1. **Omitted variable bias sensitivity analysis**[@oster2019unobservable]: The most comprehensive implementation is Stata's psacalc2 (https://github.com/ArthurHowardMorris/psacalc_supports_reghdfe). While it extends traditional psacalc with support for multiple fixed effects, it remains an unofficial patch that's cumbersome to use and lacks an R implementation.
 
-1. Language barriers limit access to English-language tutorials and documentation
-2. Lack of integrated teaching materials specifically targeting econometric applications
-3. Absence of comprehensive Chinese-language support for implementing causal inference methods in R
+2. **Heterogeneous treatment effect estimation**[@chernozhukov2018sorted]: The SortedEffects R package (https://cran.r-project.org/package=SortedEffects) currently leads in this area. However, it doesn't support continuous variables as predictors, severely limiting its applications. Additionally, the author appears to have left academia and doesn't respond to emails.
 
-## Previous Attempts and Limitations
+3. **Policy learning tools**[@athey2021policy]: While several implementations exist, such as policytree (https://github.com/grf-labs/policytree), they lack systematic Chinese-language tutorials and dissemination resources.
 
-Several R packages individually address specific causal inference techniques, but they lack:
+## Why it should be tackled
 
-1. **Integration** - No single package consolidates regression-based causal inference methods
-2. **Accessibility** - Limited bilingual documentation targeting Chinese users
-3. **Maintenance** - Critical bugs in packages like SortedEffects remain unaddressed
-4. **Pedagogy** - Missing connection to the applied econometrics workflow familiar to Stata users
+This project directly aligns with ISC's mission to support open source infrastructure by:
 
-## Why This Problem Matters
+1. **Expanding the R ecosystem's accessibility** - Creating bilingual tools and resources will significantly broaden R's reach within China's growing research community
+  
+2. **Strengthening research infrastructure** - An integrated empirical toolkit will provide essential infrastructure for producing reliable, reproducible research findings
 
-This situation creates a significant opportunity cost for China's empirical research community:
+By addressing these specific needs, our project will strengthen both the R ecosystem and the broader open source research infrastructure, creating lasting impact on empirical research practices in China and beyond.
 
-1. **Research quality** - Limited access to cutting-edge methods affects the rigor of empirical work
-2. **Methodological innovation** - Restricted adoption of newer approaches hampers methodological advancement
-3. **Research efficiency** - Working around tool limitations consumes valuable research time
-4. **Global collaboration** - The divergence in tooling creates barriers to international research partnerships
-
-The R ecosystem offers substantial advantages for causal inference with its open-source nature, reproducibility, visualization capabilities, and rapid integration of methodological innovations. Creating a bridge between this ecosystem and China's research community would significantly advance empirical research capabilities.

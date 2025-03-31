@@ -4,17 +4,12 @@
 
 ### Core Team
 
-The project will be led by Dylan Junluo CHEN (PhD student, City University of Hong Kong), who brings:
-- Experience in empirical research methods and causal inference
-- R package development knowledge
-- Background in both information systems and economics research
+The project requires a small, focused team with expertise in both econometrics and R programming:
 
-The core team also includes:
-- **Bofei SHE** (PhD student, NUS College of Computing): Providing programming expertise and econometric knowledge
-- **Prof. Ben LIU** (City University of Hong Kong): Offering econometric guidance and methodology oversight
-- **Prof. Xin LI** (City University of Hong Kong): Providing machine learning expertise, particularly for the policy learning module
+- **Dylan Junluo CHEN** (PhD student, City University of Hong Kong, Department of Information Systems): Project lead with experience in empirical research methods and R package development
+- **Bofei SHE** (PhD student, National University of Singapore, College of Computing): Programming expertise and econometric knowledge
 
-Additional support will come from PhD colleagues at CityU with experience in R programming and empirical research who have expressed interest in contributing to open-source projects.
+Additional support will come from two professors and PhD colleagues at CityU with experience in R programming and empirical research who have expressed interest in contributing to open-source projects.
 
 ### Roles and Responsibilities
 
@@ -25,53 +20,11 @@ Additional support will come from PhD colleagues at CityU with experience in R p
 
 ## Processes
 
-The project will implement the following processes:
-
-1. **Development Workflow**:
-   - GitHub-based development with branch protection
-   - Pull request review requirements (minimum 1 reviewer)
-   - Continuous integration testing
-   - Documentation updates required for all new features
-
-2. **Communication**:
-   - Bi-weekly team meetings
-   - Monthly progress updates to ISC
-   - Public development roadmap on GitHub
-   - Issue tracker for bug reports and feature requests
-
-3. **Community Engagement**:
-   - WeChat community group for Chinese users
-   - Regular office hours for user questions
-   - Translation workflow for maintaining bilingual documentation
-
-4. **Quality Assurance**:
-   - Comprehensive test suite covering all functions
-   - Real-world use case validation
-   - User feedback incorporation process
+The project will implement GitHub-based development with branch protection, continuous integration testing, and documentation requirements for all new features. Communication will occur through bi-weekly team meetings, with monthly progress updates to ISC.
 
 ## Tools & Tech
 
-The project will utilize:
-
-1. **Development Tools**:
-   - R (>= 4.0.0) as primary programming language
-   - RStudio for development environment
-   - roxygen2 for documentation
-   - testthat for unit testing
-   - GitHub Actions for continuous integration
-   - pkgdown for website generation
-
-2. **Dependencies**:
-   - lfe: Core engine for fixed effects regression
-   - ggplot2: Visualization
-   - sandwich: Robust standard errors
-   - glmnet: For certain machine learning components
-   - dplyr and other tidyverse tools for data manipulation
-
-3. **Infrastructure**:
-   - GitHub for code hosting
-   - CRAN for distribution
-   - GitHub Pages for documentation website
+The project will utilize established R packages (lfe, ggplot2, sandwich, glmnet, tidyverse) as dependencies, with GitHub for code hosting, CRAN for distribution, and GitHub Pages for documentation.
 
 ## Funding
 

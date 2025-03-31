@@ -25,7 +25,7 @@ Building on the methodology developed by Oster [-@oster2019unobservable], we wil
 
 The implementation will handle both continuous and binary outcomes, with full support for the standard econometric workflow including clustered standard errors and various fixed effects specifications.
 
-### Phase 2: Treatment Effect Heterogeneity Analysis
+### Phase 2: Heterogeneous Treatment Effect Estimation
 
 We will revive and enhance the SortedEffects package [@chernozhukov2018sorted] to:
 
@@ -36,7 +36,7 @@ We will revive and enhance the SortedEffects package [@chernozhukov2018sorted] t
 
 This module will allow researchers to move beyond average treatment effects to understand how causal impacts vary across the population - a critical capability for policy analysis.
 
-### Phase 3: Policy Learning Implementation
+### Phase 3: Policy Learning Tools
 
 Building on recent methodological developments in machine learning for causal inference [@athey2021policy], we will:
 
@@ -67,12 +67,3 @@ The package will be built with a modular design that:
 4. Offers both high-level interface functions and access to underlying components
 
 This architecture ensures maintainability while allowing advanced users to customize analyses as needed.
-
-### Assumptions
-
-Our approach is built on several key assumptions:
-
-1. The primary barrier to R adoption among Chinese research students is the lack of integrated, well-documented causal inference tools
-2. The proposed methodologies represent the most pressing needs for this community
-3. Bilingual materials will significantly reduce adoption barriers
-4. The integration of these methods will provide sufficient value to motivate users to transition from Stata
