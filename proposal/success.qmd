@@ -5,11 +5,8 @@
 The causalReg project will be considered complete when:
 
 1. A fully functional R package is published on CRAN containing all three modules (omitted variable bias sensitivity analysis, treatment effect heterogeneity analysis, and policy learning implementation) with comprehensive test coverage.
-
 2. Bilingual documentation is available with function references, methodological vignettes, applied tutorials, and video demonstrations accessible to both English and Chinese users.
-
 3. A sustainable community structure is established through an active WeChat group, responsive GitHub issue process, and clear contribution guidelines.
-
 4. Educational materials are available including workshop materials, self-paced resources, and example datasets with complete workflows.
 
 ## Measuring success
@@ -17,10 +14,12 @@ The causalReg project will be considered complete when:
 We will track project success through:
 
 **Short-term metrics (1 year)**:
+
 - Technical adoption: 100+ GitHub stars, 1,000+ CRAN downloads, 90% bug resolution within 2 weeks
 - Community engagement: 100+ WeChat group members, 5+ articles with 1,000+ views, 5+ tutorials with 500+ views
 
 **Medium-term metrics (2 years)**:
+
 - Academic impact: 5+ papers citing the package, 3+ university courses using materials, 2+ external contributions
 - Sustained growth: 5,000+ cumulative downloads, active issue discussions, ongoing feature development
 
@@ -31,11 +30,7 @@ We will track project success through:
 This project lays the foundation for several future extensions:
 
 - **Methodological expansion**: Implement synthetic control methods, instrumental variable approaches, regression discontinuity designs, and machine learning-based causal inference techniques as additional modules.
-
-- **Cross-ecosystem integration**: Develop interoperability with Python tools, Bayesian frameworks, and the tidymodels ecosystem to enable more flexible research workflows.
-
 - **Educational resources**: Create a full online course, textbook companion materials, and university curriculum integration guides to support broader adoption.
-
 - **Community development**: Establish annual contributor workshops, regional user groups in major Chinese cities, and regular webinar series featuring applied case studies.
 
 These extensions will build upon the core infrastructure established in the initial project, leveraging the bilingual framework and expanding the toolkit's capabilities while maintaining the focus on accessibility for Chinese researchers.
@@ -43,16 +38,16 @@ These extensions will build upon the core infrastructure established in the init
 ## Key risks
 
 ### People
-**Risk**: Minimal personnel risk as project aligns with team members' thesis topics and career aspirations, ensuring sustained motivation and commitment throughout development.
+- **Risk**: Minimal personnel risk as project aligns with team members' thesis topics and career aspirations, ensuring sustained motivation and commitment throughout development.
 
 ### Processes
-**Risk**: Bilingual documentation synchronization challenges.
-**Mitigation**: Establish streamlined translation workflow with prioritized documentation elements.
+- **Risk**: Bilingual documentation synchronization challenges.
+- **Mitigation**: Establish streamlined translation workflow with prioritized documentation elements.
 
 ### Tooling & Technology
-**Risk**: Dependency on third-party packages for core functionality.
-**Mitigation**: Monitor upstream changes and maintain contingency forks if necessary.
+- **Risk**: Dependency on third-party packages for core functionality.
+- **Mitigation**: Monitor upstream changes and maintain contingency forks if necessary.
 
 ### Costs
-**Risk**: Unexpected costs for community outreach.
-**Mitigation**: Leverage existing academic networks and allocate contingency funds.
+- **Risk**: Unexpected costs for community outreach.
+- **Mitigation**: Leverage existing academic networks and allocate contingency funds.

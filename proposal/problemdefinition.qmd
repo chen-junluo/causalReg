@@ -9,6 +9,7 @@ bibliography: references.bib
 R stands as a premier platform for empirical research due to its widespread adoption among economists and statisticians, robust statistical testing capabilities that support rigorous empirical work, and a thriving open-source community ideal for reproducible research. Despite these advantages, significant gaps persist:
 
 For Chinese students and researchers:
+
 1. Substantial language barriers limit access to predominantly English documentation
 2. Absence of Chinese-language communities for support and knowledge sharing
 3. Lack of integrated frameworks and educational materials in Chinese that connect theoretical concepts with practical implementation
@@ -32,7 +33,6 @@ As our Minimum Viable Product (MVP), we've selected one specific function for ea
 This project directly aligns with ISC's mission to support open source infrastructure by:
 
 1. **Expanding the R ecosystem's accessibility** - Creating bilingual tools and resources will significantly broaden R's reach within China's growing research community
-  
 2. **Strengthening research infrastructure** - An integrated empirical toolkit will provide essential infrastructure for producing reliable, reproducible research findings
 
 By addressing these specific needs, our project will strengthen both the R ecosystem and the broader open source research infrastructure, creating lasting impact on empirical research practices in China and beyond.

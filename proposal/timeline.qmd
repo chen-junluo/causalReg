@@ -6,24 +6,25 @@ Set up GitHub repository with MIT license, contribution guidelines, and continuo
 ## Technical delivery
 
 ### Phase 1: Omitted Variable Bias Sensitivity Analysis (Month 2-3)
-**Month 2:** Implement Oster methodology with fixed effects support and visualization components.
-**Month 3:** Complete bilingual documentation with vignettes and submit initial release (0.1.0) to CRAN.
+- **Month 2:** Implement Oster methodology with fixed effects support and visualization components.
+- **Month 3:** Complete bilingual documentation with vignettes and submit initial release (0.1.0) to CRAN.
 
 ### Phase 2: Treatment Effect Heterogeneity Analysis (Month 4-5)
-**Month 4:** Fix SortedEffects package's continuous variable handling and enhance visualization capabilities.
-**Month 5:** Integrate with causalReg package and develop bilingual tutorial with applied examples.
+- **Month 4:** Fix SortedEffects package's continuous variable handling and enhance visualization capabilities.
+- **Month 5:** Integrate with causalReg package and develop bilingual tutorial with applied examples.
 
 ### Phase 3: Policy Learning Implementation (Month 6-7)
-**Month 6:** Implement core policy learning algorithms with interface for optimal treatment targeting.
-**Month 7:** Complete package integration with comprehensive documentation and release version 1.0.0.
+- **Month 6:** Implement core policy learning algorithms with interface for optimal treatment targeting.
+- **Month 7:** Complete package integration with comprehensive documentation and release version 1.0.0.
 
 ## Other aspects
 
 **Community Building and Promotion (Ongoing)**
-**Month 3:** Launch announcement blog post and WeChat campaign.
-**Month 5:** Host bilingual webinar demonstrating first two modules.
-**Month 7:** Release comprehensive video tutorial series.
-**Month 8:** Develop university workshop materials and training sessions.
 
-**Reporting and Communication**
+- **Month 3:** Launch announcement blog post and WeChat campaign.
+- **Month 5:** Host bilingual webinar demonstrating first two modules.
+- **Month 7:** Release comprehensive video tutorial series.
+- **Month 8:** Develop university workshop materials and training sessions.
+
+**Reporting and Communication**: 
 Monthly progress reports to ISC, quarterly blog posts on R Consortium website, and final project report with case studies.

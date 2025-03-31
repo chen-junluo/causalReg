@@ -65,5 +65,3 @@ The package will be built with a modular design that:
 2. Provides consistent syntax across different causal inference methods
 3. Includes flexible visualization components
 4. Offers both high-level interface functions and access to underlying components
-
-This architecture ensures maintainability while allowing advanced users to customize analyses as needed.

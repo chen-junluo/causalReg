@@ -11,13 +11,6 @@ The project requires a small, focused team with expertise in both econometrics a
 
 Additional support will come from two professors and PhD colleagues at CityU with experience in R programming and empirical research who have expressed interest in contributing to open-source projects.
 
-### Roles and Responsibilities
-
-- **Dylan Junluo CHEN**: Project management, core development, documentation, community engagement
-- **Bofei SHE**: Development support, code review, testing
-- **Prof. Ben LIU**: Econometric methodology consultation
-- **Prof. Xin LI**: Machine learning methodology consultation
-
 ## Processes
 
 The project will implement GitHub-based development with branch protection, continuous integration testing, and documentation requirements for all new features. Communication will occur through bi-weekly team meetings, with monthly progress updates to ISC.

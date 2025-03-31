@@ -2,31 +2,16 @@
 
 ## Project team
 
-- **Dylan Junluo CHEN** (Primary Investigator)
-  PhD Student, Department of Information Systems
-  College of Business, City University of Hong Kong
-  Research interests: open source community, data breaches, empirical methods
-  Homepage: https://chen-junluo.com/
-
-- **Bofei SHE**
-  PhD Student, College of Computing
-  National University of Singapore
-  Expertise: R programming, econometric methods, statistical analysis
+- **Dylan Junluo CHEN** (Primary Investigator) is a PhD student in the Department of Information Systems at City University of Hong Kong, supervised by Prof. Ben Liu and Prof. Xin Li. His research focuses on open source community, data breaches and empirical methods. His homepage link is: https://chen-junluo.com/.
+- **Bofei SHE** is a PhD student in the College of Computing at the National University of Singapore. With expertise in R programming, econometric methods, and statistical analysis, Bofei brings technical depth to the project.
 
 ## Contributors
 These contributors have provided extensive guidance to Dylan Junluo CHEN, and their expertise will be instrumental in helping him execute projects successfully:
-- **Prof. Ben LIU**
-  Department of Information Systems
-  College of Business, City University of Hong Kong
-  Contribution: Econometric methodology guidance and validation
 
-- **Prof. Xin LI**
-  Department of Information Systems
-  College of Business, City University of Hong Kong
-  Contribution: Machine learning methodology consultation
+- **Prof. Ben LIU** from the Department of Information Systems at City University of Hong Kong will provide econometric methodology guidance and validation. 
+- **Prof. Xin LI**, also from the Department of Information Systems at City University of Hong Kong, will contribute possible programming and package development consultation. 
 
 ## Consulted
 
 - **Fellow PhD students** at the Department of Information Systems, City University of Hong Kong who use R as their primary analysis tool for empirical research and have expressed interest in contributing to the open source community.
-
 - **Members of the China-R community** have been consulted regarding the needs of Chinese empirical researchers and the potential impact of this package.
